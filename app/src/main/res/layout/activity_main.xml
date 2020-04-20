@@ -1,42 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_lay"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:paddingStart="16dp"
-        android:text="@string/right_position_sample"
-        android:onClick="openRightPositionSample"
-        android:textSize="20sp"
-        android:textAllCaps="false"
-        android:backgroundTint="@color/colorPrimary"
-        android:textColor="@android:color/white"
-        />
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="64dp"-->
+<!--        android:paddingStart="16dp"-->
+<!--        android:text="@string/right_position_sample"-->
+<!--        android:onClick="openRightPositionSample"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:backgroundTint="@color/colorPrimary"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        />-->
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:paddingStart="16dp"
-        android:text="@string/left_position_sample"
-        android:onClick="openLeftPositionSample"
-        android:textSize="20sp"
-        android:textAllCaps="false"
-        android:backgroundTint="@color/colorPrimary"
-        android:textColor="@android:color/white"
-        />
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="64dp"-->
+<!--        android:paddingStart="16dp"-->
+<!--        android:text="@string/left_position_sample"-->
+<!--        android:onClick="openLeftPositionSample"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:backgroundTint="@color/colorPrimary"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        />-->
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:paddingStart="16dp"
-        android:text="@string/custom_position_sample"
-        android:onClick="openCustomIndexSample"
-        android:textSize="20sp"
-        android:textAllCaps="false"
-        android:backgroundTint="@color/colorPrimary"
-        android:textColor="@android:color/white"
-        />
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="64dp"-->
+<!--        android:paddingStart="16dp"-->
+<!--        android:text="@string/custom_position_sample"-->
+<!--        android:onClick="openCustomIndexSample"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:backgroundTint="@color/colorPrimary"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        />-->
+
 </LinearLayout>

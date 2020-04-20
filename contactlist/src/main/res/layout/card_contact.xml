@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_cont_constlayout_root"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/card_cont_iv_avatar"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:layout_margin="10sp"
+        android:src="@drawable/ic_avatar"
+        android:contentDescription="avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/card_cont_aptv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/card_cont_iv_avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/card_cont_iv_avatar"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="12sp"
+        android:layout_marginEnd="12sp"
+        android:textSize="14sp"
+        tools:text="Cecilia Noemi Sánchez Salinas"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/card_cont_aptv_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/card_cont_iv_avatar"
+        app:layout_constraintTop_toBottomOf="@id/card_cont_aptv_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="12sp"
+        android:layout_marginEnd="12sp"
+        android:textSize="10sp"
+        tools:text="Líder, Iztalaco"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

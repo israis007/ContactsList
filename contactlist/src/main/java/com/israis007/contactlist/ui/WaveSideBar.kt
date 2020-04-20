@@ -13,6 +13,7 @@ import android.view.View
 import androidx.core.content.withStyledAttributes
 import com.israis007.contactlist.R
 import java.util.*
+import kotlin.collections.ArrayList
 import kotlin.math.abs
 import kotlin.math.max
 
@@ -328,6 +329,15 @@ class WaveSideBar @JvmOverloads constructor(
 
     fun setIndexItems(vararg indexItems: String) {
         mIndexItems = Arrays.copyOf(indexItems, indexItems.size)
+        requestLayout()
+    }
+
+    fun setIndexItems(listChar: List<Char>){
+        val strl = Array(listChar.size){""}
+        for (i in listChar.indices){
+            strl[i] = listChar[i].toString()
+        }
+        mIndexItems = strl
         requestLayout()
     }
 
