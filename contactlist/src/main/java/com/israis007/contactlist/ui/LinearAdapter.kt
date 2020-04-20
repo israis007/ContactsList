@@ -206,18 +206,20 @@ class LinearAdapter @JvmOverloads constructor(
                                 Log.d("Adapter", "Touched -> ${contactModel.name}")
                             }
                         })
+                } else {
+                    indexIcon.visibility = View.VISIBLE
+                    icon.visibility = View.INVISIBLE
+                    indexIcon.text = it.charIndex.toString()
+                    recycler.adapter = ContactCardAdapter(
+                        context,
+                        it.listContact,
+                        listener ?: object : OnContactItemListener {
+                            override fun OnContactItemClic(contactModel: ContactModel) {
+                                Log.d("Adapter", "Touched -> ${contactModel.name}")
+                            }
+                        })
                 }
-                indexIcon.visibility = View.VISIBLE
-                icon.visibility = View.INVISIBLE
-                indexIcon.text = it.charIndex.toString()
-                recycler.adapter = ContactCardAdapter(
-                    context,
-                    it.listContact,
-                    listener ?: object : OnContactItemListener {
-                        override fun OnContactItemClic(contactModel: ContactModel) {
-                            Log.d("Adapter", "Touched -> ${contactModel.name}")
-                        }
-                    })
+
                 listViews.add(RelationViewIndex(it.charIndex.toString(), ViewTools.getViewWithoutParent(view)))
                 linearLayout.addView(ViewTools.getViewWithoutParent(view))
             }
